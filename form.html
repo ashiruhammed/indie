@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="/Assets/Logo.svg" alt="" />
+      <div>
+        <a href="/index.html">
+          <img src="/Assets/Back Arrow.svg" alt="" />
+        </a>
+        <h4>Back to Homepage</h4>
+      </div>
+    </div>
+
+    <div class="form-cont">
+      <div class="create">
+        <h1>Create your personalized feed.</h1>
+        <div>
+          <p>
+            <strong>Over 20 resources.</strong>With resources ranging from
+            Reddit to IndieHackers,we've got all your needs covered
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Delivered weekly.</strong> Every week at exactly Tuesday
+            12:00 P.M EST- except a value packed digest right in your email
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Unlimited ideas.</strong> With all the ideas you'll be read
+            about, what's stopping you from creating a sustainable startup?
+          </p>
+        </div>
+      </div>
+      <form action="">
+        <h2>Create your IndieBrew Account</h2>
+        <div>
+          <label for="email"><strong>Email</strong></label>
+          <input
+            type="email"
+            id="email"
+            placeholder="hammed@example.com"
+            required
+            autofocus
+          />
+        </div>
+        <div>
+          <label for="name"><strong>Full Name</strong></label>
+          <input
+            type="text"
+            id="name"
+            placeholder="ashiru"
+            required
+            min="8"
+            max="20"
+          />
+        </div>
+        <div>
+          <label for="password"><strong>Password</strong></label>
+          <input
+            type="password"
+            id="password"
+            placeholder="At least 8 characters "
+            required
+            minlength="8"
+            maxlength="15"
+          />
+        </div>
+        <div class="check">
+          <input type="checkbox" id="check" required />
+          <label for="check"
+            >By creatin an account on IndieBrew, you agree to the
+            <a href="">Terms & Conditions</a>
+          </label>
+        </div>
+        <button type="submit"><h4>Create an Account</h4></button>
+      </form>
+    </div>
+  </body>
+</html>

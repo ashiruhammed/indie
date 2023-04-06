@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  background: rgb(239, 211, 242);
+  background: linear-gradient(
+    107deg,
+    rgba(239, 211, 242, 1) 8%,
+    rgba(253, 252, 249, 1) 27%
+  );
+  background-position-y: 80%;
+  padding: 0.5rem 1rem;
+}
+
+.nav,
+.list,
+.foot-list,
+.mock-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-list {
+  flex-direction: column;
+}
+
+.nav button {
+  display: none;
+}
+
+button {
+  background: rgb(102, 78, 252);
+  border: 0;
+  cursor: pointer;
+  padding: 0 1.5rem;
+  border-radius: 5px;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+span {
+  color: rgb(102, 78, 252);
+  font-weight: 900;
+}
+p,
+.foot ul {
+  color: grey;
+}
+
+.media {
+  margin-top: 140px;
+}
+.mock,
+.socio-img,
+.phone img {
+  width: 100%;
+}
+.ava {
+  width: 192px;
+  margin-top: 20px;
+}
+.hero,
+.phone {
+  margin-top: 80px;
+}
+.nav-ul {
+  list-style-type: none;
+  background: white;
+  right: -1000px;
+  position: fixed;
+  height: 100vh;
+  width: 40vw;
+  top: -15px;
+  transition: all 0.3s ease;
+}
+.menu {
+  z-index: 99999;
+  cursor: pointer;
+  object-fit: contain;
+}
+.open_list {
+  right: 1px;
+}
+.hide {
+  display: none;
+}
+.foot ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav button {
+    display: block;
+  }
+  body {
+    padding: 1rem 2rem;
+  }
+
+  .menu {
+    display: none;
+  }
+  .nav-ul {
+    background: none;
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    transition: none;
+    display: flex;
+    margin-left: 10em;
+    column-gap: 1.5rem;
+  }
+  .mock,
+  .socio-img,
+  .phone img {
+    width: 400px;
+    object-fit: contain;
+  }
+
+  .phone img {
+    height: 350px;
+  }
+  .foot {
+    margin-top: 10rem;
+    justify-content: space-between;
+  }
+  .list {
+    column-gap: 100px;
+  }
+
+  .mock-block {
+    justify-content: center;
+  }
+  .hero-cont h1,
+  .indie {
+    width: 20rem;
+  }
+  .hero {
+    margin-top: 40px;
+  }
+
+  .phone,
+  .socio,
+  .foot {
+    display: flex;
+  }
+
+  .socio {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    padding: 1rem 7rem;
+  }
+  .nav ul {
+    margin-left: 38vw;
+  }
+
+  .hero {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: row-reverse;
+  }
+  .phone h2 {
+    width: 20rem;
+  }
+  .phone p,
+  .socio p {
+    width: 33rem;
+  }
+
+  .phone {
+    justify-content: space-between;
+  }
+
+  .mock {
+    width: 500px;
+  }
+  .phone div h2,
+  .phone div p {
+    margin: 0.3rem;
+  }
+  .phone div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .foot-list {
+    flex-direction: row;
+    column-gap: 100px;
+  }
+}
